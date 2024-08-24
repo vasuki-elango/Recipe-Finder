@@ -1,0 +1,225 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+:root{
+    --primary-color:#db5100;
+    --secondary-color:#b54507;
+}
+body{
+    background-color: #efefef;
+    font-weight: 300;
+    text-align: center;
+}
+.container{
+    min-height: 100vh;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+}
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.title{
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+img{
+    width: 100%;
+}
+.meal-box{
+    margin: 2rem 0;
+}
+.meal-box cite{
+    font-size: 0.9rem;
+}
+.search-box{
+    margin: 2rem auto;
+    display: flex;
+    align-items: stretch;
+    
+}
+#search-content,
+#searchbtn{
+    width: 100%;
+}
+#search-content{
+    padding:0 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    border:1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 2rem 0px 0px 2rem;
+}
+#search-content::placeholder{
+    color: var(--primary-color);
+}
+#searchbtn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius:0px 2rem 2rem 0px;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+#searchbtn:hover{
+    background-color: var(--secondary-color);
+}
+.meal-result{
+    margin-top: 2.4rem 0;
+}
+#meals{
+    margin: 2.4rem;
+}
+.meals-item{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.7);
+    margin: 2rem 0;
+}
+.meal-img img{
+    width: 100%;
+}
+.meal-details{
+    padding: 1.5rem 0.5rem;
+}
+.meal-details h3{
+    font-size: 1.4rem;
+}
+.mealbtn{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0.70rem 0;
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 130px;
+    margin:1rem auto;
+    border-radius: 2rem;
+    transition: all 0.3s linear;
+}
+#mealbtn:hover{
+    background-color: var(--secondary-color);
+}
+.meal-info{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+}
+.meal-info-content{
+    color: #fff;
+    padding: 2rem;
+}
+#closeBtn{
+    position: absolute;
+    top:1rem;
+    right: 2rem;
+    font-size: 20px;
+    background-color:#fff;
+    border-radius: 50%;
+    border: none;
+    padding: 5px 8px;
+}
+.meal-info p{
+    text-align: justify;
+    /* padding: 1rem; */
+    padding-top: 0.4rem;
+}
+#watchbtn{
+    text-decoration: none;
+    color:var(--primary-color);
+    background-color:#fff;
+    padding: 0.70rem 0;
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 130px;
+    margin:1rem auto;
+    border-radius: 2rem;
+    transition: all 0.3s linear;
+}
+#watchbtn:hover{
+    background-color: #000;
+    color: #fff;
+}
+.showMe{
+    display: block;
+}
+h3{
+    font-size: 1.5rem;
+}
+.notfound{
+   grid-template-columns: 1fr !important;
+   color: var(--primary-color);
+   font-size: 1.8rem;
+   width: 100%;
+   font-weight: 600;
+}
+.cate{
+    text-align: center;
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 0.2rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.meal-info-content img{
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+.intr{
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: 600;
+    color: #000;
+}
+@media screen and (min-width:600px) {
+    .search-box{
+        width: 540px;
+        /* margin: auto; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width:768px) {
+    #meals{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .meals-item{
+        margin: 0;
+    }
+}
+@media screen and (min-width:992px) {
+    #meals{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+    .meals-item{
+        margin: 0;
+    }
+}

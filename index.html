@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="meal-box">
+                <h2 class="title">Find Meals For Your Ingredients</h2>
+                <blockquote>Real food doesn't have ingredients,real food is ingredients.<br>
+                    <cite>-Jamie Oliver</cite>
+                </blockquote>
+                <div class="search-box">
+                    <input type="text" id="search-content" placeholder="Enter your ingredients" >
+                    <button type="submit" id="searchbtn" class="btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="meal-result">
+                <h2 class="title">Your Search Results</h2>
+                <div id="meals" >
+                </div>
+                <div class="meal-info">
+                    <button id="closeBtn" class="btn">X</button>
+                    <div class="meal-info-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
